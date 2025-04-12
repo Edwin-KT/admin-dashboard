@@ -1,3 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+* {
+  line-height: calc(1em + 0.5rem);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ul,
+li {
+  list-style-position: inside;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* css reset end */
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --black: #0d0106;
+  --purple: #3626a7;
+  --blue: #e3f2fd;
+  --orange: #e4572e;
+  --gray: #fbfbff;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
 .page-grid {
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -6,4 +73,32 @@
 
 .sidebar {
   grid-row: 1 / 3;
+  display: grid;
+  gap: 4rem;
+  background-color: var(--blue);
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.nav-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.nav-list > li,
+.sidebar > .title {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  place-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 2.4rem;
+  height: auto;
+}
+
+.nav-list > li > img {
+  width: 1.6rem;
+  height: auto;
 }
