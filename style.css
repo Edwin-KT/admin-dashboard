@@ -171,3 +171,40 @@ body {
 }
 
 /* header section end */
+
+/* main content section start */
+
+.main-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.main-content .title {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.project {
+  background-color: var(--pale-yellow);
+  padding: 1rem;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.project > .buttons {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.your-projects > .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(24ch, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1rem;
+}
+
+/* main content section end */
