@@ -207,4 +207,10 @@ body {
   gap: 1rem;
 }
 
+.announcement {
+  border: 1px solid;
+  padding: 1rem 2rem;
+  background-color: var(--gray);
+}
+
 /* main content section end */
