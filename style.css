@@ -109,6 +109,7 @@ body {
 .header {
   display: grid;
   grid-template-rows: repeat(2, max-content);
+  box-shadow: 0px 4px 6px -6px gray;
 }
 
 .header > main,
