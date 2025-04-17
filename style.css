@@ -213,4 +213,9 @@ body {
   background-color: var(--gray);
 }
 
+.main-content > aside {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
 /* main content section end */
